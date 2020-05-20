@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Facebook Extension",
+  "description": "Remove home right ads and birthday section!!!",
+  "version": "1.0",
+  "icons": {"48": "facebook-ads-icon.png"},
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/"],
+      "js": ["content_script.js"]
+    }
+  ]
+}
